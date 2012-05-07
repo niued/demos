@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>支付宝内部组件库</title>
+		<link media="all" href="base.css" rel="stylesheet" charset="utf-8">
+		<script type="text/javascript" src="/demos/js/html5.js"></script>
+		<style>
+			a{color:#efefef; text-decoration:none;}
+		
+			.wrap{margin:0 auto; width:1200px; height:1000px;}
+			.header{width:1200px; height:60px; border:0px #ccc solid; border-radius:0px 0 0px 0; margin-bottom:10px;}
+			.header h1{line-height:60px; font-size:20px; margin-left:20px;}
+			
+			.main{
+			border:1px solid #efefef\9;
+			box-shadow:0px 0px 8px #919191; height:100%; 
+			
+			}
+			
+			.side-nav {
+			    padding: 0 0;
+			    background:#EBEDEE; 
+			    width:200px;
+			    float:left; 
+			    height:100%;
+			}
+			.side-nav a {
+			    color: #4D4D4D;
+			}
+			.side-nav a.d-green {
+			    color: #398F14;
+			}
+			.side-nav h3 span {
+			    color: #666;
+			    font-size:14px;
+			    cursor: pointer;
+			    display: block;
+			    font-weight: bold;
+			    margin-left: 10px;
+			    padding: 7px 0 7px 13px;
+			}
+			.side-nav h3 span.arrow {
+			    background-position: 0 -365px;
+			}
+			.side-nav h3 span.up {
+			    background-position: 0 -333px;
+			}
+			
+			
+			.side-nav ul.tabs-box {
+			    border-bottom: 1px solid #C7CACB;
+			    clear: both;
+			    width: 200px;
+			}
+			.side-nav ul.tabs-box li {
+			    clear: both;
+			}
+			.side-nav ul.tabs-box li a {
+			    background: none repeat scroll 0 0 #EBEDEE;
+			    display: block;
+			    height: 26px;
+			    line-height: 26px;
+			    width:100%;
+			    text-indent:26px;
+			}
+			.side-nav ul.tabs-box li a:hover {
+			    background: none repeat scroll 0 0 #CFE5BD;
+			    text-decoration: none;
+			}
+			.side-nav ul.tabs-box li a.active {
+			    background: url("/demos/image/bg.png") repeat-x scroll 0 -391px transparent;
+			    color: #FFFFFF;
+			    text-decoration: none;
+			}
+			
+			
+			.sprite-btn {
+			    background-image: url("/demos/image/btn.png");
+			    background-repeat: no-repeat;
+			}
+
+			.slide{width:8px; height:1000px; float:left;}
+			.content{width:990px; float:left; height:1000px; }
+			
+			.footer{margin:20px 0; text-align:center;}
+		</style>
+	</head>
+	
+	
+	<body>
+		<div class="wrap">
+			<header class="header">
+				<h1>支付宝内部组件库</h1>
+			</header>
+			<div class="main">
+				<div class="side-nav">
+					<h3><span class="arrow sprite-btn">常用模块</span></h3>
+					<ul class="tabs-box">
+						<li><a href="./normalmodule/header.htm" target="mainframe" class="sprite-bg ">1、基本模块</a></li>
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">2、图形组件</a></li>
+					</ul>
+					<h3><span class="up sprite-btn">前端规范</span></h3>
+					<ul class="tabs-box fn-hide">
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg">1、html规范</a></li>
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">2、css规范</a></li>
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">3、js规范</a></li>
+					</ul>
+					<h3><span class="up sprite-btn">交互相关</span></h3>
+					<ul class="tabs-box fn-hide">
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">1、交互相关要求</a></li>
+					</ul>
+					<h3><span class="up sprite-btn">创新体验馆</span></h3>
+					<ul class="tabs-box fn-hide">
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">1、创意设计</a></li>
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">2、前沿技术</a></li>
+					</ul>
+					<h3><span class="up sprite-btn">其它</span></h3>
+					<ul class="tabs-box fn-hide">
+						<li><a href="./rules/htmlrule.htm" target="mainframe" class="sprite-bg ">1、测试的</a></li>
+					</ul>
+				</div>
+				<div class="slide">
+				
+				</div>
+				<section class="content">
+					<iframe name="mainframe" width="100%" scrolling="no"  allowtransparency="true" height="100%" frameborder="0" id="mainframe" border="no" src="#">
+					</iframe>
+				</section>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="fn-clear"></div>
+		<footer class="footer">
+			支付宝版权所有 2004-2012ICP证：浙B2-20100257
+		</footer>
+		<script src="/demos/js/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function(){
+			//导航收缩
+			$(".side-nav h3 span").bind("click",function(){
+				var that = $(this);
+				if(that.hasClass('arrow')){
+					that.removeClass('arrow').addClass('up');
+					that.parent("h3").next("ul").addClass('fn-hide');
+				}else{
+					that.removeClass('up').addClass('arrow');
+					that.parent("h3").next("ul").removeClass('fn-hide');
+				}
+			})
+			
+			$("ul.tabs-box a").bind("click",function(){
+				var that=$(this);
+				$("ul.tabs-box a").removeClass('active');
+				that.addClass('active');
+			})
+		})
+		</script>
+	</body>
+</html>

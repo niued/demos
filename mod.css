@@ -1,0 +1,150 @@
+/*全站公告样式*/
+.mod-notice{ background:#FFF2A7 repeat; border-bottom: 1px solid #E7CB5A; height: 29px; position: relative; width: 100%;}
+.mod-notice p{color: #FF4800;float: left;font-weight: bold;line-height: 29px;position: relative;text-align: center;
+text-indent: 29px;width: 90%;}
+.mod-notice-close{background:url(/demos/image/close11*11.gif) no-repeat; display:block; width:11px; height:11px; float:right;
+position:relative; top:9px; right:20px; cursor:pointer;}
+
+/*全站导航*/
+.mod-nav {
+    background:#ff7026;
+    height: 30px;
+    width: 100%;
+}
+.mod-nav li {
+    display: block;
+    float: left;
+    margin: 2px 2px 0 0;
+    text-align: center;
+}
+.mod-nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    width: 95px;
+}
+
+.mod-nav li:hover a,.mod-nav li.current a{
+    background: url("/demos/image/navbtn.png") no-repeat;
+    color: #FE7200;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*面包屑*/
+.mod-bread{
+	
+}
+.mod-bread a{
+	color:#0099cc;
+}
+
+/*表格*/
+.mod-table{
+	border: 1px solid #CCCCCC;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.mod-table {
+    width: 100%;
+}
+.mod-table a{
+	color:#0099cc;
+}
+.mod-table tr {
+    height: 28px;
+}
+.mod-table thead tr {
+    background:#D7D4D0;
+}
+
+.mod-table thead th {
+	border: 1px solid #E7E7E7;
+    text-align: center;
+}
+.mod-table tbody tr.hasbg{
+	background:#efefef;
+}
+.mod-table tbody tr:hover{
+	background:#B4D1DF;
+}
+.mod-table tbody td {
+    border: 1px solid #E7E7E7;
+    padding:0 5px;
+    text-align:center;
+}
+.mod-table tbody td.ft-left {
+    text-align:left;
+}
+
+.tb-num{width:50px;}
+.tb-name{width:200px;}
+.tb-title{width:400px;}
+.tb-time{width:200px;}
+.tb-op{width:140px;}
+
+
+/*tab切换*/
+.mod-tab{
+	height:28px;
+	background:#eee;
+	border:1px solid #ccc;
+}
+.mod-tab span{
+	height:24px; 
+	line-height:24px;
+	display:block; 
+	float:left; 
+	margin:4px 0 0 10px; 
+	padding:0 15px;
+	cursor:pointer;
+}
+.mod-tab span.current{
+	background:#fff;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+.tab-con{
+	border:1px solid #ccc;
+	border-top:none;
+	height:50px;
+	text-indent:20px;
+}
+
+		
+/*分页*/
+.mod-pagehelp {
+    float: right;
+    padding-right: 15px;
+    clear:both;
+    margin-top:10px;
+}
+.mod-pagehelp span {
+    display: block;
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+    width: 30px;
+}
+.page-num {
+    background: url("/demos/image/page.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #666;
+    display: block;
+    float: left;
+    height: 20px;
+    margin-left: 3px;
+    text-align: center;
+    width: 30px;
+}
+.page-text{
+	float: left;
+    height:18px;
+    border:1px solid #ccc;
+    margin-left: 3px;
+    width:30px;
+}
