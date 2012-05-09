@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>常用模块</title>
-		<link media="all" href="/demos/base.css" rel="stylesheet" charset="utf-8">
-		<link media="all" href="/demos/mod.css" rel="stylesheet" charset="utf-8">
-		<link media="all" href="/demos/image/box/colorbox.css" rel="stylesheet" charset="utf-8">
+		<link media="all" href="../base.css" rel="stylesheet" charset="utf-8">
+		<link media="all" href="../mod.css" rel="stylesheet" charset="utf-8">
+		<link media="all" href="../image/box/colorbox.css" rel="stylesheet" charset="utf-8">
 		<script type="text/javascript" src="../js/html5.js"></script>
 		<style>
 		.content{margin:0 auto; width:100%; min-height:500px;}
@@ -221,11 +221,63 @@
 			        </span>
 				</section>
 				
+				
+				<style>
+					.mod-btn{margin:10px 0 0 20px;}
+					.m1-btn{
+						background: url("../image/btns.png") 0 -57px no-repeat;
+						border:none;
+						cursor: pointer;
+						display: inline-block;
+						padding:0 0 0 2px;
+					}
+					.m1-btn span{
+						background: url("../image/btns.png") right -57px no-repeat;
+						border:none;
+						cursor: pointer;
+						display: inline-block;
+						font-weight: bold;
+    					overflow: visible;
+    					padding: 0 10px 0 9px;
+    					color: #FFFFFF;
+    					font-size: 14px;
+    					height: 31px;
+    					line-height: 31px;
+    				}
+    				.m2-btn{
+    					background-position:0 -90px;
+    				}
+    				.m2-btn span{
+    					background-position:right -90px;
+    				}
+    				.m3-btn{
+    					background-position:0 -123px;
+    				}
+    				.m3-btn span{
+    					background-position:right -123px;
+    					color:#666666;
+    				}
+				</style>
 				<section class="modBox">
 					<h3>按钮</h3>
-					<div>
-						
-					</div>
+					<div class="J_modcon">
+<div class="mod-btn">
+    <a class="m1-btn"><span>短按钮</span></a>
+    <a class="m1-btn"><span>很长很长的长按钮啊啊啊</span></a>
+</div>
+<div class="mod-btn">
+    <a class="m1-btn m2-btn"><span>短按钮</span></a>
+    <a class="m1-btn m2-btn"><span>很长很长的长按钮啊啊啊</span></a>
+</div>
+<div class="mod-btn">
+    <a class="m1-btn m3-btn"><span>短按钮</span></a>
+    <a class="m1-btn m3-btn"><span>很长很长的长按钮啊啊啊</span></a>
+</div>				
+			        </div>
+			        <div class="fn-clear"></div>
+			        <span class="viewsocure" >
+			        	<a href="#">查看源码</a>
+			        </span>
 				</section>
 			</section>
 		</div>
@@ -256,7 +308,7 @@
 			function getSocureHtm(socure){
 				var htm = [];
 				htm.push('<div class="viewsocure">');
-				htm.push('<p>相关css文件：<a target="_blank" href="/demos/base.css">base.css</a> <a target="_blank" href="/demos/mod.css">mod.css</a></p>')
+				htm.push('<p>相关css文件：<a target="_blank" href="../base.css">base.css</a> <a target="_blank" href="../mod.css">mod.css</a></p>')
 				htm.push('<textarea class="showViewCon">');
 				htm.push(socure);
 				htm.push('</textarea>');

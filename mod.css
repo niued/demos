@@ -2,7 +2,7 @@
 .mod-notice{ background:#FFF2A7 repeat; border-bottom: 1px solid #E7CB5A; height: 29px; position: relative; width: 100%;}
 .mod-notice p{color: #FF4800;float: left;font-weight: bold;line-height: 29px;position: relative;text-align: center;
 text-indent: 29px;width: 90%;}
-.mod-notice-close{background:url(/demos/image/close11*11.gif) no-repeat; display:block; width:11px; height:11px; float:right;
+.mod-notice-close{background:url(./image/close11*11.gif) no-repeat; display:block; width:11px; height:11px; float:right;
 position:relative; top:9px; right:20px; cursor:pointer;}
 
 /*全站导航*/
@@ -28,7 +28,7 @@ position:relative; top:9px; right:20px; cursor:pointer;}
 }
 
 .mod-nav li:hover a,.mod-nav li.current a{
-    background: url("/demos/image/navbtn.png") no-repeat;
+    background: url("./image/navbtn.png") no-repeat;
     color: #FE7200;
     font-weight: bold;
     text-decoration: none;
@@ -131,7 +131,7 @@ position:relative; top:9px; right:20px; cursor:pointer;}
     width: 30px;
 }
 .page-num {
-    background: url("/demos/image/page.png") no-repeat scroll 0 0 transparent;
+    background: url("./image/page.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #666;
     display: block;
